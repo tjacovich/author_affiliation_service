@@ -131,7 +131,7 @@ class Export(object):
         for author in authors:
             for value in self.selected_authors[author]:
                 [affiliation, last_active] = value.split('|')
-                sheet.append(author, affiliation, last_active)
+                sheet.append([author, affiliation, last_active])
 
         # save the spreadsheet to a temporary file
         filename = self.TMP_EXCEL_FOLDER + self.EXPORT_FILENAME + str(uuid.uuid4())
