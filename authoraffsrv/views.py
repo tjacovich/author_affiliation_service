@@ -122,7 +122,7 @@ class Export(object):
         :return:
         """
         # Create workbook and worksheet
-        wbk = openpyxl.Workbook(encoding='UTF-8')
+        wbk = openpyxl.Workbook()
         sheet = wbk.active
 
         row = 0
@@ -150,7 +150,7 @@ class Export(object):
         :return:
         """
         # Create workbook and worksheet
-        wbk = openpyxl.Workbook(encoding='UTF-8')
+        wbk = openpyxl.Workbook()
         sheet = wbk.active
 
         authors = list(self.selected_authors.keys())
